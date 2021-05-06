@@ -50,13 +50,14 @@ class BaseService(object):
         Returns a boolean that indicates whether the number is of a valid pattern.
         """
         try:
-            phone_no_to_validate = phonenumbers.parse(phone_number, None)
-            is_a_valid_phone_number = phonenumbers.is_valid_number(phone_no_to_validate)
+            phone_num_to_validate = phonenumbers.parse(phone_number, None)
+            is_a_valid_phone_number = phonenumbers.is_valid_number(phone_num_to_validate)
             if is_a_valid_phone_number:
                 return True
         except Exception:
             return False
-
+        
+        return False
 
     @staticmethod
     def __make_get_request(url, headers, data,params):
