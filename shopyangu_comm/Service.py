@@ -8,7 +8,7 @@ class ShopyanguCommunicationsException(Exception):
 
 
 class BaseService(object):
-    baseUrl = "http://127.0.0.1:8070/api/v1/"
+    baseUrl = "http://communications.shopyangu.com:8070"
 
     "http://127.0.0.1:8070/api/v1/communications/messaging/send-sms/"
 
@@ -111,11 +111,5 @@ class APIService(BaseService):
         super(APIService, self).__init__(api_key)
 
     def _init_service(self):
-        print(self._baseUrl, "BURL")
-        # self._baseUrl = 'https://api.'
-        # if self._is_sandbox():
-        #     self._baseUrl += self._SANDBOX_DOMAIN
-        #     self._contentUrl = self._baseUrl
-        # else:
-        #     self._baseUrl += self._PRODUCTION_DOMAIN
-        #     self._contentUrl = 'https://content.' + self._PRODUCTION_DOMAIN
+        self._baseUrl = self._baseUrl + '/api/v1/communications'
+    
