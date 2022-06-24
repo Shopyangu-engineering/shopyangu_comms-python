@@ -8,7 +8,7 @@ class ShopyanguCommunicationsException(Exception):
 
 
 class BaseService(object):
-    baseUrl = "http://communications.shopyangu.com:8070"
+    baseUrl = "http://communications.shopyangu.com:8080"
 
     "http://127.0.0.1:8070/api/v1/communications/messaging/send-sms/"
 
