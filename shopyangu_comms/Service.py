@@ -8,7 +8,10 @@ class ShopyanguCommunicationsException(Exception):
 
 
 class BaseService(object):
-    baseUrl = "http://communications.shopyangu.com:8080"
+    baseUrl = "http://127.0.0.1:8007"
+    # baseUrl = "http://comms.shopyangu.com:8007 http://127.0.0.1:8007/"
+
+    b = "http://comms.shopyangu.com:8007/admin/"
 
     "http://127.0.0.1:8070/api/v1/communications/messaging/send-sms/"
 
@@ -25,6 +28,7 @@ class BaseService(object):
         self.headers = {
             'Accept': 'application/json',
             'Content-type': 'application/json',
+            'User-Agent': 'shopyangu-comms-python/1.0.0',
             'api-key': self._api_key
         }
         self._baseUrl = self.__class__.baseUrl
@@ -111,5 +115,5 @@ class APIService(BaseService):
         super(APIService, self).__init__(api_key)
 
     def _init_service(self):
-        self._baseUrl = self._baseUrl + '/api/v1/communications'
+        self._baseUrl = self._baseUrl + '/api/v1/comms'
     

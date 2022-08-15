@@ -63,3 +63,5 @@ target/
 *.rst
 
 /notes
+
+.DS_Store
