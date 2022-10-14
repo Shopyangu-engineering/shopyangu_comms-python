@@ -8,12 +8,7 @@ class ShopyanguCommunicationsException(Exception):
 
 
 class BaseService(object):
-    baseUrl = "http://127.0.0.1:8007"
-    # baseUrl = "http://comms.shopyangu.com:8007 http://127.0.0.1:8007/"
-
-    b = "http://comms.shopyangu.com:8007/admin/"
-
-    "http://127.0.0.1:8070/api/v1/communications/messaging/send-sms/"
+    baseUrl = "https://comms-api.shopyangu.com"
 
     def __init__(self, api_key, logger=None):
 
