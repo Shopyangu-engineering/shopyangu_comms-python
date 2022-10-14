@@ -13,7 +13,7 @@ if sys.argv[-1] == 'publish':
 
 
 setup(
-    name='shopyangu_comm',
+    name='shopyangu_comms',
     version=version,
     packages=['shopyangu_comms'],
     description='Official Shopyangu\'s comm Python SDK',
@@ -28,7 +28,6 @@ setup(
     python_requires=">=2.7.10",
     author_email='joe@shopyangu.com',
     url='https://github.com/Shopyangu-engineering/shopyangu_comms-python',
-    download_url='https://codeload.github.com/Shopyangu-engineering/shopyangu_comms-python/tar.gz/' + version,
     keywords='voice sms ussd whatsapp telegram messenger airtime shopyangu',
     classifiers=[],
     long_description=long_description,
