@@ -9,22 +9,14 @@ Take a look at the [API docs here](https://comms.shopyangu.com/).
 
 ## Install
 
-```bash
-$ pip  install shopyangu_comm # python 2.7.x
-
-OR
-
-$ python -m pip install shopyangu_comm # python 2.7.x
-
-OR
-
-$ pip3 install shopyangu_comm # python 3.6.x
-
-OR
-
-$ python3 -m pip install shopyangu_comm # python 3.6.x
+```
+$ pip install git+https://github.com/Shopyangu-engineering/shopyangu_comms-python.git#egg=shopyangu_comms
 
 ```
+
+#### Support
+* Python 2.7 >
+
 
 ## Usage
 
